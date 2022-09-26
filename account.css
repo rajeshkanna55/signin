@@ -1,0 +1,27 @@
+
+.account{
+    background-color: rgb(246, 246, 248);
+    height: 100vh;
+    font-family: sans-serif;
+    padding-left: 50px;
+    padding-top:50px;
+}
+.ok{
+    margin-top: 20%;
+    margin-left: 50%;
+}
+#ok{
+    color:white;
+    background-color: blue;
+    
+}
+button{
+    padding:10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor:pointer;
+}
+
+
+

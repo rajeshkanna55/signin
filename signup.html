@@ -11,18 +11,25 @@
         <ul><li><a href="login.html">HOME</a></li>
             <li><a href="aboutus">ABOUT US</a></li>
             <li><a href="careers">CAREERS</a></li>
-            <!--<li><a href="signup.html">LOGIN</a></li>-->
+            <li><a href="signup.html">LOGIN</a></li>
         </ul>       
         <div>
                 <label>Username</label>
-                <input type="text" name="" placeholder="enter your username" required>
+                <input type="text" name="" id="name"  placeholder="enter your username" required >
+                <br>
                 <br>
                 <br>
                 <label>password</label>
-                <input type="password" name="" placeholder="enter your password" required>
+                <input  type="password" name="" id="password" placeholder="enter your password" required >
                 <br>
+                <br><br>
+                <button onclick="validate()">login</button>
+                <p>-OR-</p>
                 <br>
-                <button>login</button>
+                <p>don't have account?</p>
+                <a href="account.html" target="_self">create an account</a>
+                
         </div>
+        <script src="login.js"></script> 
 </body>
 </html>

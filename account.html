@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <div class="account">
+        <label>username :</label>
+        <input type="text" id="username">
+        <br><br>
+        <label>password  :</label>
+        <input type="password" id="pass" required>
+        <br><br>
+        <label>confirm password :</label>
+        <input type="password" id="confirm" required>
+        <br>
+        <h4>Nationality</h4>
+        <label>indian</label>
+        <input type="radio" name="m">
+        <label>other country</label>
+        <input type="radio" name="m">
+        <br>
+        <h4>Gender</h4>
+       <select name="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="others">others</option>
+        </select>
+        <br>
+        <br>
+        <div class="ok">
+          <button id="ok" onclick="verify()">ok</button>
+          <button>clear</button>
+        </div>
+    </div>
+    <script src="account.js"></script>
+    
+</body>
+</html>
