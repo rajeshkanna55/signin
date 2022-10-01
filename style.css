@@ -1,8 +1,5 @@
 body{
-    background-color: rgb(160, 70, 43);
-    background-image: url("66b7f6e5ad85cdfeab3459f2b5480407.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: linear-gradient(to left, #000066 0%, #cc00cc 100%);
 }
 ul{
     list-style: none;
@@ -34,61 +31,127 @@ label,input,button{
     margin: 5 px;
     font-family: sans-serif;
     padding: 5px;
-    border-radius: 1em;
+
 }
 label{
-    color: white;
+    font-family: sans-serif;
+    color: rgb(8, 8, 8);
 }
 input{
     border-style: none;
     outline: none;
-    background-color: #333;
-    border-bottom: 2px solid white;
+    background-color:white;
+    border-bottom: 2px solid rgb(7, 2, 2);
 }
 button{
-    padding:5px 20px;
+    border-radius: 20px;
+    width: 200px;
     background-color: green;
     border-color:black;
     border-style:solid;
     border: none;
     outline:none;
+    position: relative;
+    left: 90px;
 }  
 button:hover{
     background-color: aliceblue;
     color:green;
+    border: 1px solid green;
 }
-div{
+/*  div{
     border-radius: 10px;
     height: 300px;
     position:relative ;
     left: 40%;
     top:150px;
-    padding-left:-10px;
-}
-div{
-    background-image: url("images.jpeg");
-    background-size: cover;
-    margin-right: 75%;
-    padding-top: 50px;
-}
-div button{
-    margin-left: 120px;
+    padding-left:-10px; 
+} */
 
+div{
+    border-style: outset ;
+    box-shadow: 5px solid #333;
+    width:30%;
+    padding-top:20px;
+    padding-left: 10px;
+    position: relative;
+    top: 150px;
+    left:20%;
+    border-radius: 10px;
 }
 div p{
+    font-family: sans-serif;
     text-align: center;
-    color: aliceblue;
+    color: rgb(4, 8, 12);
+    
 }
 div a{
+    font-family: sans-serif;
     display:flex;
     justify-content: center;
     text-decoration: none;
+    position: relative;
+    bottom: 20px;
     
 }
-div a:hover{
-    font-size: 1.2em;
+.p{
+    position: relative;
+    bottom: 30px;
 }
+@media  screen and  (max-width: 900px)
+{
+    body{
+        background: linear-gradient(to left, #000066 0%, #cc00cc 100%); 
+    }
+    button{
+        width:100px;
+        position: relative;
 
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        background: linear-gradient(to left, #000066 0%, #cc00cc 100%);
+    }
+    div{
+        padding-right: 20%;
+        position: relative;
+        top: 20px;
+        
+    }
+    label{
+        font-size: small;
+        
+    }
+    input{
+        width: 100px;
+        height: 2px;
+    }
+    input::placeholder{
+        font-size: 10px;
 
+    } 
+    button{
+        font-size: 10px;
+        width:100px;
+        padding: 4px;
+        height: 15px;
+        position: relative;
+        left:15px;
+    }
+    p{
+        font-size:small;
+        
+    }
+    a{
+        text-align: center;
+    }
+    li{
+        font-size: 8px;
+    }
+}
+    
+
+    
 
        
