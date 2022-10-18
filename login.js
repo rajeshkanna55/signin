@@ -1,34 +1,34 @@
 function validate(){
     var uname=document.getElementById("name").value;
     var pword=document.getElementById("password").value;
-    var Arr=JSON.parse(localStorage.getItem('username'));
-    var Array=JSON.parse(localStorage.getItem('password'));
+    var Arr=JSON.parse(localStorage.getItem('userData'));
+    // var Array=JSON.parse(localStorage.getItem('password'));
+
     if(uname != '' && pword != '')
-    {
+    { 
       var i=0;
-        var j=0;
-        console.log(i);
+        // var j=0;
       do{
         
-        if(Arr[i]==uname && Array[j]==pword){
-          var user=Arr[i]
-          var pass=Array[j]
-          alert('success')
-        }
-      // else{
-          // alert('invalid username or password')
-      // }
-        i++;
-        j++;
-        
-      }while(i<=Arr.length,j<=Array.length);
-           
-      
-
-      
-      if(user!=uname && pass!=pword){
+      if(Arr[i]==undefined){
         alert('invalid username or password')
+        break;
       }
+        if(Arr[i].name==uname && Arr[i].pass){
+          // var user=Arr[i].name;
+          // var pass=Arr[i].pass;
+          sessionStorage.setItem('login',uname);
+          window.location.replace('dash.html');
+
+          break;
+        }
+     
+        i++;
+        // j++;
+        
+      }while(i<=Arr.length);
+           
+     
 
       }
 

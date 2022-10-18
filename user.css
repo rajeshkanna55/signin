@@ -1,0 +1,25 @@
+
+body img{
+    display:inline ;
+    padding:10px;
+}
+img{
+    border-radius: 2em;
+    cursor:pointer;
+    background-color: #cc00cc;
+}
+.out a{
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: #cc00cc;
+    color: white;
+    padding: 5px;
+    margin-right: 50%;
+    border-radius: 4px;
+  
+}
+.out{
+    text-align: end;
+    padding:5px;
+    margin-top: 400px;
+}

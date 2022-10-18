@@ -59,14 +59,15 @@ button:hover{
     color:green;
     border: 1px solid green;
 }
-/*  div{
-    border-radius: 10px;
-    height: 300px;
-    position:relative ;
-    left: 40%;
-    top:150px;
-    padding-left:-10px; 
-} */
+img{
+   position: relative;
+   left:80%;
+   bottom:43px; 
+   
+}
+h1{
+    font-size: 8em;
+}
 
 div{
     border-style: outset ;
